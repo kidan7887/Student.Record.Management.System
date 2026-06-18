@@ -1,0 +1,52 @@
+Main.java
+This class contains the main method and displays the menu. It allows the user to choose different options and interacts with the StudentManager class.
+
+Student.java
+This class represents a student. It stores the student's ID, name, department, and GPA. The class also implements Serializable so student objects can be saved and loaded from files.
+
+StudentManager.java
+This class contains all the main functionalities of the system. It manages student records, handles file operations, generates reports, and creates backups.
+
+Features
+
+* Add a new student
+* Search for a student using their ID
+* Update student information
+* Delete a student record
+* Display all students
+* Generate a report showing total students, highest GPA, lowest GPA, and average GPA
+
+File Storage
+
+The project stores data in three different ways:
+
+1. Text File
+
+   * Uses PrintWriter and Scanner
+   * Stores data in students.txt
+
+2. Binary File
+
+   * Uses DataOutputStream and DataInputStream
+   * Stores data in students.dat
+
+3. Object Serialization
+
+   * Uses ObjectOutputStream and ObjectInputStream
+   * Stores data in students.ser
+
+Backup
+
+The system also creates a backup file using BufferedInputStream and BufferedOutputStream. This helps protect student records in case the original file is lost or damaged.
+
+File Management
+
+When the program starts, it automatically creates a folder called StudentRecords and all required files if they do not already exist.
+
+Exception Handling
+
+The program uses exception handling to prevent crashes and handle errors such as invalid user input or file-related problems.
+
+Conclusion
+
+This project helped me understand how Java File I/O works, including text files, binary files, object serialization, buffered streams, and exception handling. It also showed how different Java concepts can be combined to create a practical record management system.
